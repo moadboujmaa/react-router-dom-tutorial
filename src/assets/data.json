@@ -1,0 +1,28 @@
+{
+	"jobs": [
+		{
+			"id": 1,
+			"title": "Sr. React Developer",
+			"salary": 50000,
+			"location": "London UK"
+		},
+		{
+			"id": 2,
+			"title": "Frontend Developer",
+			"salary": 40000,
+			"location": "London UK"
+		},
+		{
+			"id": 3,
+			"title": "Sr. React Developer",
+			"salary": 60000,
+			"location": "London UK"
+		},
+		{
+			"id": 4,
+			"title": "Full Stack Developer",
+			"salary": 50000,
+			"location": "London UK"
+		}
+	]
+}
