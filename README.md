@@ -11,13 +11,13 @@
 
 ## 🏚️ Old way to implement Routes:
 
-- install package
+### install package
 
 ```shell
 npm i react-router-dom
 ```
 
-- wrap the `<App />` component with `<BrowserRouter />`
+### wrap the `<App />` component with `<BrowserRouter />`
 
 ```javascript
 createRoot(document.getElementById('root')).render(
@@ -27,7 +27,7 @@ createRoot(document.getElementById('root')).render(
 )
 ```
 
-- Simple Route Example:
+### Simple Route Example:
 
 ```javascript
 <Routes>
@@ -37,7 +37,7 @@ createRoot(document.getElementById('root')).render(
 
 This means that visiting the path / will load the Home component on the screen
 
-- Including multiple routes
+### Including multiple routes
 
 ```javascript
 <Routes>
@@ -50,7 +50,7 @@ This means that visiting the path / will load the Home component on the screen
 
 Based on the chosen path, the browser will load the corresponding component
 
-- Create a navigation menu
+### Create a navigation menu
   
 ```javascript
 <ul>
@@ -65,7 +65,7 @@ Create a navigation menu using `<Link>` elements to let users navigate between r
 
 ## 🆕 New way to implement Routes:
 
-- Create new component `<RootLayout />`
+### Create new component `<RootLayout />`
 
 ```javascript
 const RootLayout = () => {
@@ -81,7 +81,7 @@ const RootLayout = () => {
 ```
 The RootLayout component represents a layout component that provides a common structure for all the routes defined within it
 
-- `<App />` component should be like this:
+### `<App />` component should be like this:
 
 ```javascript
 const  App = () => {
@@ -109,3 +109,8 @@ In this case, `<RootLayout />` is used to wrap the nested routes (`<Home />`, `<
 > **createRoutesFromElements:** This function helps to define routes by converting JSX elements into route objects. It's a more declarative approach to defining routes in React.
 
 > **`<RouterProvider />`** This component is used to provide the router configuration to the application. It acts as the entry point for the routing system, allowing React Router to manage the routing behavior and render the appropriate components based on the current URL.
+
+## Difference between `<Link />` and `<NavLink />`:
+
+
+## Routing using `<useNavigate />` hook:
